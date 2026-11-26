@@ -23,6 +23,8 @@ def main() -> None:
         raise ValueError(f"entry is {len(text)} characters, must be 1-200")
     if "\n" in text or "\r" in text:
         raise ValueError("entry must be a single line")
+    if not text.isprintable():
+        raise ValueError("entry must contain only printable characters")
     os.makedirs("/output", exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8", newline="\n") as f:
         f.write(text + "\n")
