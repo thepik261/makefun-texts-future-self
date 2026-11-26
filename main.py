@@ -11,7 +11,7 @@ import os
 ENTRY = (
     "It's me, you, from 2046. Good news: you finally stop apologizing to "
     "the microwave. Bad news: you start apologizing to the fridge instead. "
-    "Growth is weird."
+    "The fridge forgives you. Growth is weird."
 )
 
 OUTPUT_PATH = "/output/entry.txt"
